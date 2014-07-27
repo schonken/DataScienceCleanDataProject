@@ -1,8 +1,10 @@
 .Rproj.user
 .Rhistory
 .RData
+*.zip
 Project.Rproj
 CODEBOOK.html
 README.html
 UCI HAR Dataset/
-*.zip
+UCI-HAR-Summary-per-Measurement.csv
+UCI-HAR-Summary-per-Subject-and-Activity-combination.csv

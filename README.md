@@ -1,7 +1,7 @@
 Getting and Cleaning Data
 ===
 
-Welcome to my Coursera Getting and Cleaning Data project. This project endeavours to create two tidy datasets from the Human Activity Recognition Using Smartphones Dataset (Version 1.0). The reasoning behind the tidy dataset structure and the definition of the various fields are detailed in [CODEBOOK.md](https://github.com/schonken/DataScienceCleanDataProject/blob/master/CODEBOOK.md).
+Welcome to my Coursera Getting and Cleaning Data project. This project endeavours to create two tidy datasets from the Human Activity Recognition Using Smartphones Dataset (Version 1.0). The reasoning behind the tidy dataset structure and the definition of the various fields are detailed in [CodeBook.md](https://github.com/schonken/DataScienceCleanDataProject/blob/master/CodeBook.md).
 
 #### Setting up your environment
 1. Fork or download this repo to a project folder
