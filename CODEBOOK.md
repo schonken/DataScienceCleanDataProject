@@ -1,4 +1,4 @@
-Codebook for Tidy Datasets
+Codebook
 ===
 
 The Human Activity Recognition Using Smartphones Dataset (Version 1.0) is distributed over multiple files split between "train" and "test" data. This project endeavours to create two summarised tidy datasets:
