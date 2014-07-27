@@ -26,7 +26,21 @@ Both datasets use the same codebook, the field definitions are:
     - Mean over measurements group either by measurement interval or per subject and activity combination
 - measurement_sd
     - Standard Deviation over measurements group either by measurement interval or per subject and activity combination
-    
+
+#### Data Processing
+
+The files X_test.txt and X_train.txt details the test and training set. Each line states 128 observations related a subject doing an activity. The y_test.txt and y_train.txt files state the observed activity and the subject_test.txt and subject_train.txt files state the observed subject. The data were processed as follows:
+
+- For test and train independently do:
+    - Join the activity label with each activity entry
+	  - Calculate the mean and standard deviation over the 128 observations
+	  - Column bind subject, activity, activity label, mean and standard deviation yeilding a summary per measurement
+- Row bind the summary per measurementfor test and training
+- Create the Summary per Measurement dataset (data frame and CSV file)
+- Aggregate the mean over the Measurement Summary for each subject and activity combination for both the mean and standard deviation.
+- Create the Summary per Subject and Activity combination dataset (data frame and CSV file)
+	  - _Note_: Both the mean and standard deviation in the new dataset are calculated by taking the mean of their respective fields from the Summary per Measurement dataset. The reasoning behind taking the mean of the standard deviation as opposed to the standard deviation of the standard deviation is that the mean will be of greater value for activity prediction given 128 new observations.
+  
 #### Examples of the respective datasets
 ```
 Summary per Measurement (Top 10)
@@ -46,7 +60,7 @@ subject activity activity_label group measurement_mean measurement_sd
 
 ```
 Summary per Subject and Activity combination (Top 10)
-========================================================================
+=========================================================================
 subject activity     activity_label group measurement_mean measurement_sd
       1        1            WALKING TRAIN      -0.12858590      0.4659778
       1        2   WALKING_UPSTAIRS TRAIN      -0.17860883      0.5070061

@@ -3,7 +3,7 @@
 .RData
 *.zip
 Project.Rproj
-CODEBOOK.html
+CodeBook.html
 README.html
 UCI HAR Dataset/
 UCI-HAR-Summary-per-Measurement.csv
