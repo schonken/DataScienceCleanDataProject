@@ -23,9 +23,9 @@ Both datasets use the same codebook, the field definitions are:
     - Identifies the source group (TEST, TRAIN)
     - Useful for lookups against the source material
 - measurement_mean
-    - Mean over measurements group either by measurement interval or per subject and activity combination
+    - Mean over 128 measurement observations recorded in X_test.txt and X_train.txt
 - measurement_sd
-    - Standard Deviation over measurements group either by measurement interval or per subject and activity combination
+    - Standard deviation over 128 measurement observations recorded in X_test.txt and X_train.txt
 
 #### Data Processing
 
