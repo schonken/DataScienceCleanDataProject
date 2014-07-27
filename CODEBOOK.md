@@ -1,7 +1,7 @@
 Codebook for Tidy Datasets
 ===
 
-The Human Activity Recognition Using Smartphones Dataset (Version 1.0) is distributed over multiple files split between "train" and "test" data. This project endeavours to create two summurised tidy datasets:
+The Human Activity Recognition Using Smartphones Dataset (Version 1.0) is distributed over multiple files split between "train" and "test" data. This project endeavours to create two summarised tidy datasets:
 
 - A summary per measurement
     - Data Frame = summaryMeasurement 
@@ -10,18 +10,18 @@ The Human Activity Recognition Using Smartphones Dataset (Version 1.0) is distri
     - Data Frame = summarySubjectActivity 
     - CSV File = UCI-HAR-Summary-per-Subject-and-Activity-combination.csv
 
-Both datasets use the same codebook. The field definitions are a follow:
+Both datasets use the same codebook, the field definitions are:
 
 - subject
     - Identifies the subject who performed the activity
 - activity
     - Identifies the activity performed by the subject 
-    - One could argue that this field is not needed because the activity_label is present. I reasoned that the presence of activity would greatly aid in lookups against the source material should one wish to
+    - One could argue that this field is not needed because the activity_label is present. I reasoned that the presence of the activity field would aid in lookups against the source material
 - activity_label
     - A label for the activity performed by the subject
 - group
     - Identifies the source group (TEST, TRAIN)
-    - Useful for lookups against the source material should one wish to
+    - Useful for lookups against the source material
 - measurement_mean
     - Mean over measurements group either by measurement interval or per subject and activity combination
 - measurement_sd
@@ -44,7 +44,6 @@ subject activity activity_label group measurement_mean measurement_sd
       1        1        WALKING TRAIN       -0.1393701      0.4638654
 ```
 
-##### 
 ```
 Summary per Subject and Activity combination (Top 10)
 ========================================================================

@@ -1,13 +1,13 @@
-Getting and Cleaning Data Project
+Getting and Cleaning Data
 ===
 
 Welcome to my Coursera Getting and Cleaning Data project. This project endeavours to create two tidy datasets from the Human Activity Recognition Using Smartphones Dataset (Version 1.0). The reasoning behind the tidy dataset structure and the definition of the various fields are detailed in [CODEBOOK.md](https://github.com/schonken/DataScienceCleanDataProject/blob/master/CODEBOOK.md).
 
 #### Setting up your environment
-1. Fork or download or this repo to a project folder
+1. Fork or download this repo to a project folder
 2. Download and save the [Human Activity Recognition Using Smartphones Dataset (Version 1.0)](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) in the project folder
-3. Extract the content of the archive to a folder named "UCI HAR Dataset"
-4. Confirm your folder and file structure look as follow:
+3. Extract the content of the archive to a folder named ```UCI HAR Dataset```
+4. Ensure your folder and file structure looks like the following:
 
 ```
 project
@@ -33,7 +33,7 @@ project
 ```
 
 #### Building new tidy datasets
-This project uses the data.table and plyr packages. You might have run ```install.packages('data.table')``` and ```install.packages('plyr')``` to intall the respective packages.
+This project uses the data.table and plyr packages. You might have to run ```install.packages('data.table')``` and ```install.packages('plyr')``` to intall the respective packages.
 
 Execute the ```run_analysis.R``` script. This will create two tidy datasets namely:
 
